@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Галерея</title>
+</head>
+<body>
+    <h1>Галерея картинок</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="ярик.jpg" alt="Описание картинки 1" class="gallery-img" onclick="openModal(this)">
+            <div class="description">Описание картинки 1</div>
+        </div>
+        <div class="gallery-item">
+            <img src="я.jpg" alt="Описание картинки 2" class="gallery-img" onclick="openModal(this)">
+            <div class="description">Описание картинки 2</div>
+        </div>
+        <div class="gallery-item">
+            <img src="крис и я.jpg" alt="Описание картинки 3" class="gallery-img" onclick="openModal(this)">
+            <div class="description">Описание картинки 3</div>
+        </div>
+        <div class="gallery-item">
+            <img src="крис 2.jpg" alt="Описание картинки 3" class="gallery-img" onclick="openModal(this)">
+            <div class="description">Описание картинки 3</div>
+        </div>
+        <div class="gallery-item">
+            <img src="черный лебедь.jpg" alt="Описание картинки 3" class="gallery-img" onclick="openModal(this)">
+            <div class="description">Описание картинки 3</div>
+        </div>
+        <div class="gallery-item">
+            <img src="чы.png" alt="Описание картинки 3" class="gallery-img" onclick="openModal(this)">
+            <div class="description">Описание картинки 3</div>
+        </div>
+        <div class="gallery-item">
+            <img src="ффчфч.jpg" alt="Описание картинки 3" class="gallery-img" onclick="openModal(this)">
+            <div class="description">Описание картинки 3</div>
+        </div>
+        <div class="gallery-item">
+            <img src="man.jpg" alt="Описание картинки 3" class="gallery-img" onclick="openModal(this)">
+            <div class="description">Описание картинки 3</div>
+        </div>
+        <div class="gallery-item">
+            <img src="man2.jpg" alt="Описание картинки 3" class="gallery-img" onclick="openModal(this)">
+            <div class="description">Описание картинки 3</div>
+        </div>
+        <!-- Добавьте больше картинок при необходимости -->
+    </div>
+
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        function openModal(img) {
+            const modal = document.getElementById("modal");
+            const modalImg = document.getElementById("modal-img");
+            const caption = document.getElementById("caption");
+            modal.style.display = "block";
+            modalImg.src = img.src;
+            caption.innerHTML = img.alt;
+        }
+
+        function closeModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+    </script>
+</body>
+</html>

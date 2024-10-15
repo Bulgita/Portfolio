@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Russo One", sans-serif;
+    font-weight: 200;
+    color: #fff;
+    background-color: black;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+img {
+    margin: 0 0 10px 0;
+    max-width: calc(100% - 0px);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper {
+    background: black; 
+    width: 100%;
+    padding: 50px; 
+    box-sizing: border-box;
+}
+.container {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 50px 0;
+    background: black;
+}
+
+/* Стили для логотипа */
+.logo img {
+    width: 100px; 
+    height: auto; 
+    display: inline-block; 
+    vertical-align: middle; 
+}
+
+
+header.logo{
+    text-transform: uppercase;
+}
+
+header nav {
+    float: right;
+    width: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+}
+
+.hero--info {
+    text-align: center;
+    position: relative;
+    top: 20%;
+}
+
+.hero container{
+    text-align: center;
+    position: relative;
+    top: 20%;
+}
+
+header nav ul li {
+    margin-right: 30px;
+    display: inline-block;
+}
+
+
+header nav ul li a {
+    color: #fff;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover{
+    border-bottom: 5px solid #FF6A00;
+}
+
+header nav ul li.btn a {
+    background: #FF6A00;
+    padding: 9px 17px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+}
+
+header nav ul li.btn a:hover {
+    background: #9c3900;
+}
+
+/*СЕКЦИЯ АРТОВ*/
+
+.portfolio {
+    padding: 100px 0;
+}
+
+.portfolio .see-all{
+    color: #fff;
+    background: #FF6A00;
+    border-radius: 5px;
+    padding: 12px 23px;
+    float: right;
+    display: block;
+    transform: all 500ms ease;
+    margin: 10px 0;
+}
+
+.portfolio .see-all:hover{
+    transform: scale(1.1);
+}
+
+
+.art .block a {
+    display: inline-block;
+}
+
+.art .block img {
+    width: 400px; 
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.art .block img:hover {
+    transform: scale(1.1); 
+}
+
+
+
+.portfolio h3{
+    font-weight: 300;
+    font-size: 31px;
+    margin: 20px 0;
+    display: inline-block;
+}
+
+
+
+.portfolio .art {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px; 
+    padding: 0; 
+}
+
+
+.text {
+    padding: 20px 20px;
+    font-size: 25px;
+    font-weight: 200;
+    text-align: center;
+    width: 800px;
+}
+
+.kobfun-galeri {
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+}
+.kobfun-galeri > div {
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all 2s cubic-bezier(.25, .4, .45, 1.4);
+}
+
+.kobfun-galeri > div:hover {
+    flex: 5;
+}
